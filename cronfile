@@ -1,0 +1,3 @@
+
+0 * * * *  /usr/local/bin/python /usr/app/server_status.py  >> /var/log/cron.log 2>&1
+

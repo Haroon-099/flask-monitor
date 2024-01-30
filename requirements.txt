@@ -1,0 +1,6 @@
+psutil==5.8.0
+Flask
+Flask-SQLAlchemy
+pymysql
+Flask-RESTful==0.3.8
+mysql-connector-python==8.0.27
