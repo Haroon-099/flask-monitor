@@ -24,3 +24,31 @@ I used **MySQL** as the database for the application.
     -v /path/to/init.sql:/docker-entrypoint-initdb.d/ \
     mysql:8.3.0
     ```
+
+## Flask Application 
+
+1. Pull the app image from Docker Hub.
+
+    ```bash
+    docker pull haroon1999/sever_statistics:v1
+    ```
+
+2. Create and run the container. You must provide these system environment variables:
+
+   - `DB_SERVER`: the IP address for the database server
+   - `DB_USER`: database username
+   - `DB_PASSWORD`: database password
+   - `DB_DATABASE`: database name
+   - `DB_PORT`: database port number
+
+    ```bash
+    docker run -d \
+    --name server_st \
+    -e DB_SERVER="192.168.1.14" \
+    -e DB_USER="root" \
+    -e DB_PASSWORD="root" \
+    -e DB_DATABASE="statistics_db" \
+    -e DB_PORT=3306 \
+    -p 8080:8080 \
+    haroon1999/sever_statistics:v1
+    ```
