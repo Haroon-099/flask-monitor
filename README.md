@@ -17,3 +17,5 @@ i used **MYSQL** as database for the application.
   -v /path/to/init.sql:/docker-entrypoint-initdb.d/ \
   mysql:8.3.0
   ```
+
+
