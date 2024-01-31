@@ -3,10 +3,10 @@
 ## DataBase
 
 i used **MYSQL** as database for the application.
-1. first create the volume to persists the mysql data. 
-  ```bash docker volume create server_statistics_data ```
-2. move the init.sql to database server, this file contains database inialization(cretae database, table and insert some data)
-3. create and run the database container 
+1. first create the volume to persists the mysql data.
+    ```bash docker volume create server_statistics_data ```
+3. move the init.sql to database server, this file contains database inialization(cretae database, table and insert some data)
+4. create and run the database container 
   ```bash 
   docker run -d \
   --name statistics-database \
