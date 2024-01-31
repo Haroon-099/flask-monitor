@@ -52,3 +52,14 @@ I used **MySQL** as the database for the application.
     -p 8080:8080 \
     haroon1999/sever_statistics:v1
     ```
+## Test Endpoints
+
+You can test the application using the following endpoints:
+
+- [http://localhost:8080/all-statistics](http://localhost:8080/all-statistics)
+- [http://localhost:8080/cpu-usage-last-24](http://localhost:8080/cpu-usage-last-24)
+- [http://localhost:8080/disk-usage-last-24](http://localhost:8080/disk-usage-last-24)
+- [http://localhost:8080/memory-usage-last-24](http://localhost:8080/memory-usage-last-24)
+- [http://localhost:8080/current-cpu-usage](http://localhost:8080/current-cpu-usage)
+- [http://localhost:8080/current-disk-usage](http://localhost:8080/current-disk-usage)
+- [http://localhost:8080/current-memory-usage](http://localhost:8080/current-memory-usage)
